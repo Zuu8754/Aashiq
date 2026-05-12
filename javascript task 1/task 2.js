@@ -171,14 +171,14 @@ switch(Signal){
     // alert("check for the time, give ");
 // }
 
-additional question
-1. 2
-2. 3
-3.52
-4.1
-5.NaN
-6.true
-7.1
+// additional question
+// 1. 2
+// 2. 3
+// 3.52
+// 4.1
+// 5.NaN
+// 6.true
+// 7.1
 
 
 
