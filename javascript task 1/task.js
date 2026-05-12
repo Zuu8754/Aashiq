@@ -209,7 +209,7 @@ let y = ++x;
 console.log(x,y);
 // ans:6,6
 
-// question 36
+// question 3
 let m=3;
 let n=m--;
 console.log(m, n);
