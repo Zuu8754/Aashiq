@@ -453,7 +453,7 @@ console.log(5=="5");
 console.log(5==="5");
 // ans:false
 
-// question 39
+// question 39git
 console.log(true && false|| true);    
 // ans:true
 
