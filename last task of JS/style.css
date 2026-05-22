@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:darkgray
+}
+
+.navbar{
+    background:#111827;
+    color:blueviolet;
+    padding:30px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+    font-size:50px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.nav-right input,
+.nav-right select{
+    padding:15px;
+    border:none;
+    border-radius:100px;
+    outline:black;
+}
+
+button{
+    padding:10px 20px;
+    border:black;
+    border-radius:50px;
+    background:blueviolet;
+    color:black;
+    cursor:pointer;
+    transition:0.15s;
+}
+
+button:hover{
+    background:violet;
+}
+
+.cart-box{
+    background:white;
+    padding:10px 16px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.main{
+    height:300px;
+    background-image:
+    url("https://images.unsplash.com/photo-1523275335684-37898b6baf30");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.main-content{
+    background:red;
+    padding:30px;
+    border-radius:10px;
+}
+
+.main-content h2{
+    font-size:450px;
+    margin-bottom:10px;
+}
+
+.main-content p{
+    font-size:20px;
+}
+
+#loader{
+    text-align:center;
+    font-size:25px;
+    margin-top:20px;
+}
+
+#error{
+    text-align:center;
+    color:red;
+    font-size:22px;
+    margin-top:20px;
+}
+
+#products{
+    padding:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:black;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:1200px;
+    height:150px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.card p{
+    margin-bottom:10px;
+    color:grey;
+}
+
+.price{
+    font-size:22px;
+    color:white;
+    margin-bottom:10px;
+}
+
+.remove-btn{
+    background:#dc2626;
+}
+
+.remove-btn:hover{
+    background:red;
+}
+
+.cart-section{
+    background:white;
+    margin:30px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cart-section h2{
+    margin-bottom:20px;
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+    padding:10px 0;
+}
+
+img{
+    max-width:80%;
+}
+
+@media(max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .nav-right{
+        justify-content:center;
+    }
+
+    .main{
+        height:250px;
+        padding:20px;
+    }
+
+    .main-content h2{
+        font-size:35px;
+    }
+
+    .main-content p{
+        font-size:18px;
+    }
+
+    #products{
+        grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+    }
+
+    .cart-section{
+        margin:20px;
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .nav-right{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .nav-right input,
+    .nav-right select,
+    .nav-right button{
+        width:100%;
+    }
+
+    .main{
+        height:220px;
+    }
+
+    .main-content{
+        padding:20px;
+    }
+
+    .main-content h2{
+        font-size:28px;
+    }
+
+    .main-content p{
+        font-size:16px;
+    }
+
+    #products{
+        padding:15px;
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    .card img{
+        width:100px;
+        height:120px;
+    }
+
+    .cart-section{
+        margin:15px;
+        padding:15px;
+    }
+
+    .cart-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .cart-item button{
+        width:100%;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Shopping plaza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">
+            Shopping Plaza..
+        </h1>
+        <div class="nav-right">
+            <input
+            type="text"
+            id="search"
+            placeholder="Search products...">
+            <select id="category">
+                <option value="all">All Categories  </option>
+
+                <option value="Gadgets">Gadgets</option>
+
+                <option value="jewels">Jewels</option>
+
+                <option value="men's wear">Men's Wear</option>
+                
+                <option value="women's Wears">Women's Wear</option>
+                
+                <option value="kids wear">Kid's Wear</option>
+            
+            </select>
+            <button onclick="sortLowToHigh()">Price high</button>
+            <button onclick="sortHighToLow()">Price low</button>
+            <div class="cart-box">
+                 Cart :
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="accesories">
+        <div class="accesories-content">
+            <h2>
+                Premium Shopping Deals
+            </h2>
+            <p>
+                Buy premium products at best prices
+            </p>
+        </div>
+    </section>
+    <p id="loader">
+        Loading Products...
+    </p>
+    <p id="error"></p>
+    <section id="products">
+    </section>
+
+    <section class="cart-section">
+        <h2>
+            Cart Items
+        </h2>
+        <div id="cart"></div>
+        <h3>
+            Total Price :
+            ₹ <span id="total">0</span>
+        </h3>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
